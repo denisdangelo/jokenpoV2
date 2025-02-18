@@ -3,7 +3,7 @@
     "name": "JokenpoV2",
     "short_name": "JokenpoV2",
     "description": "Aplicativo para jogar jokenpoV2 contra a maquina",
-    "start_url": "/",
+    "start_url": "/jokenpoV2/",
     "scope": "/",
     "display": "standalone",
     "orientation": "portrait-primary",
