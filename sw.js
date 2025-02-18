@@ -21,6 +21,7 @@ self.addEventListener('install', (event) => {
                 cache.add('./jokenpoV2/img/pctesoura.png')
                 cache.add('./jokenpoV2/img/pedra.png')
                 cache.add('./jokenpoV2/img/tesoura.png')
+				cache.add('./jokenpoV2/img/fundo.png')
         })
     )
 })
