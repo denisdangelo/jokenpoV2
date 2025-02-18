@@ -8,7 +8,7 @@
   
   /* Fundo e fonte */
   body {
-	background: url(/img/fundo.png) no-repeat center center fixed;
+	background: url(/jokenpoV2/img/fundo.png) no-repeat center center fixed;
 	background-size: cover;
 	font-family: 'Arial', sans-serif;
 	color: #fff;
