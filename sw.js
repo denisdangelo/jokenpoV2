@@ -12,6 +12,7 @@ self.addEventListener('install', (event) => {
             .then((cache) => {  
                 cache.add('./jokenpoV2/')
                 cache.add('./jokenpoV2/index.html')
+				cache.add('./jokenpoV2/style.css')
                 cache.add('./jokenpoV2/app.js')
                 cache.add('./jokenpoV2/img/papel.png')
                 cache.add('./jokenpoV2/img/pc.png')

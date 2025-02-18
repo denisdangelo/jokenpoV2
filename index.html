@@ -1,44 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JokenpoV2</title>
-    <meta name="description " content="PWA - jokenpoV2">
-	<link rel="stylesheet" href="style.css">
-</head>
-<link rel="manifest" href="manifest.json">
-
-<body>
-
-    <h1>Jokenpo</h1>
-    <h2>Jogador</h2>
-    <img src="img/pedra.png" alt="pedra">
-    <img src="img/papel.png" alt="papel">
-    <img src="img/tesoura.png" alt="tesoura">
-
-
-    <form>
-        <input type="radio" name="escolha" id="pedra">Pedra
-        <input type="radio" name="escolha" id="papel">Papel
-        <input type="radio" name="escolha" id="tesoura">Tesoura
-
-        <p>
-            <!--type="button" não envia o formulário (comportamento padrão)-->
-            <input type="button" value=" JOGAR" onclick="jogar()">
-            <input type="reset" value="RESET" onclick="limpar()">
-        </p>
-
-    </form>
-    <hr>
-    <h2>Computador</h2>
-    <img src="img/pc.png" alt="pc" id="pc">
-    <hr>
-    <h3 id="resultado"></h3>
-
-
+    <meta name="description" content="PWA - jokenpoV2" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Manifesto para PWA -->
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  
+  <body>
+    <!-- Container principal -->
+    <div class="container text-center">
+      
+      <!-- Título do jogo -->
+      <h1 class="mt-4 p-3 bg-dark text-light rounded">Jokenpo</h1>
+      
+      <!-- Seção do jogador -->
+      <section class="player-section mb-4">
+        <h2>Escolha sua jogada</h2>
+        <div class="d-flex justify-content-center">
+          <img src="img/pedra.png" alt="Pedra" class="choice-img" />
+          <img src="img/papel.png" alt="Papel" class="choice-img" />
+          <img src="img/tesoura.png" alt="Tesoura" class="choice-img" />
+        </div>
+      </section>
+      
+      <!-- Formulário de escolha -->
+      <form class="mb-4">
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input type="radio" name="escolha" id="pedra" class="form-check-input" value="pedra" />
+            <label for="pedra" class="form-check-label">Pedra</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="escolha" id="papel" class="form-check-input" value="papel" />
+            <label for="papel" class="form-check-label">Papel</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="escolha" id="tesoura" class="form-check-input" value="tesoura" />
+            <label for="tesoura" class="form-check-label">Tesoura</label>
+          </div>
+        </div>
+        
+        <!-- Botões de ação -->
+        <div class="mt-3">
+          <button type="button" class="btn btn-success" onclick="jogar()">JOGAR</button>
+          <button type="reset" class="btn btn-danger" onclick="limpar()">RESET</button>
+        </div>
+      </form>
+      
+      <!-- Seção do computador -->
+      <section class="computer-section mb-4">
+        <h2>Computador escolheu</h2>
+        <img src="img/pc.png" alt="Escolha do PC" id="pc" class="choice-img" />
+      </section>
+      
+      <!-- Resultado do jogo -->
+      <h3 id="resultado" class="result-text p-3 rounded"></h3>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

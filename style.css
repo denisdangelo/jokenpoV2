@@ -1,0 +1,91 @@
+/* RESET CSS */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Fundo e fonte */
+  body {
+	background: url(/img/fundo.png) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+	text-align: center;
+  }
+  
+  /* Estilização do container principal */
+  .container {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos para as seções de jogador e computador */
+  .player-section, .computer-section {
+	margin-bottom: 30px;
+  }
+  
+  /* Imagens de escolha */
+  .choice-img {
+	width: 100px;
+	height: auto;
+	margin: 10px;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+  }
+  .choice-img:hover {
+	transform: scale(1.2);
+  }
+  
+  /* Botões personalizados */
+  .btn {
+	margin: 5px;
+	font-size: 1.2em;
+	padding: 12px 24px;
+	border-radius: 5px;
+  }
+  .btn-success {
+	background-color: #28a745;
+	border: none;
+  }
+  .btn-success:hover {
+	background-color: #218838;
+  }
+  .btn-danger {
+	background-color: #dc3545;
+	border: none;
+  }
+  .btn-danger:hover {
+	background-color: #c82333;
+  }
+  
+  /* Estilização do resultado */
+  .result-text {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #f39c12;
+	background: rgba(255, 255, 255, 0.1);
+	padding: 10px;
+	border-radius: 5px;
+	display: inline-block;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+	.choice-img {
+	  width: 80px;
+	}
+	.btn {
+	  font-size: 1em;
+	  padding: 10px 20px;
+	}
+	.result-text {
+	  font-size: 1.5em;
+	}
+  }
+  
